@@ -1,0 +1,43 @@
+@media(max-width:1024){
+    h1{
+        font-size:3.25rem;
+    }
+    h2{
+        font-size:1.125rem;
+        line-height:1.5625rem;
+    }
+    .wrapper{
+        padding-top:1.25rem;
+        padding:1.25rem;
+    }
+}
+@media(max-width:991px){
+    h4{
+        font-size:0.937rem;
+        margin-bottom:0.625rem;
+    }
+    p{
+        font-size:0.075rem;
+        line-height:1.3125rem;
+    }
+    .text-content{
+        width:100%;
+    }
+    .navigation-wrap .navbar-brand img{
+        height:2.8125rem;
+    }
+    .navbar-toggler i{
+        color:var(--white-color);
+        line-height:2;
+    }
+    .navigation-wrap{
+        text-align:right;
+        background-color: black;
+    }
+    .navigation-wrap .nav-link{
+        line-height:1.875rem;
+    }
+#home{
+padding:4.375rem 0,0;
+}
+}

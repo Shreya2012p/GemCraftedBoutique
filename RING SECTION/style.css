@@ -1,0 +1,141 @@
+body{
+    background-image: url("c:/Users/Acer/Downloads/golden-glitter-lights-isolated-dark-background-gold-glitter-dust-defocused-texture-abstract-sparkle-particle-bokeh.jpg");
+}
+p{
+    margin:0;
+}
+.container h4{
+  font-size:20px;
+  font-style:bold;
+}
+.container .btn{
+    padding: 10px 50px;
+    background-color: #eb2f5b;
+    border-radius: 55px;
+    font-size:12px;
+}
+.container:hover .btn{
+    background-color:#de1d4a;
+    color:#fceef5;
+    box-shadow: black;
+}
+.container  .btn .fas{
+    font-size:10px;
+    padding-left:10px;
+    border-color: black;
+    border-width: 400px;
+    box-shadow: black;
+
+}
+.card_wrap{
+    box-shadow: 0 1px 4px rgb(255, 255, 255);
+    background:black;
+    overflow:hidden;
+    transition:0.5s all ease;
+}
+.card_wrap:hover{
+    color:#fff;
+    transform:scale(1.025);
+    box-shadow: 0 5px 10px rgb(18, 18, 18);
+}
+.card_wrap .img_box{
+    position:relative;
+}
+.card_wrap .date{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height:40px;
+    background-color: #eb2f5b;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    transition: 0.5s all ease;
+}
+.card_wrap .date .day{
+    font-size:14px;
+    font-weight:600;
+}
+.card_wrap .date .month,
+.card_wrap .date .year{
+    font-size: 10px;
+}
+.card_wrap .text-muted{
+    font-size:12px;
+}
+.card_wrap:hover  .text-muted{
+    color:#ffffff !important;
+}
+.card_wrap .content{
+    padding:0 20px;
+}
+.card_wrap  .content h6{
+    font-weight:600;
+}
+.card_wrap .content .btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #eb2f5b;
+    border-radius: 25px;
+    font-size:12px;
+    border:none;
+}
+.card_wrap:hover .content .btn{
+    background-color:#de1d4a;
+    color:#fbf6f9;
+}
+.card_wrap .content .btn .fas{
+    font-size:10px;
+    padding-left:5px;
+}
+.card_wrap .content .foot .admin{
+    color:#eb2f5b;
+    font-size:12px;
+}
+.card_wrap:hover .content .foot .admin{
+    color:#fff;
+}
+.card_wrap .content .foot .icon {
+    font-size:12px;
+}
+.card_wrap .bg_effect{
+    bottom:0;
+    height:0;
+    width:100%;
+}
+.card_wrap:hover .bg_effect{
+bottom:0;
+height:320px;
+width:100%;
+position:absolute;
+z-index:-1;
+background-color:grey;
+animation:popBackground 0.3s ease-in
+}
+
+@keyframes popBackground{
+    0%{
+        height:20px;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    50%{
+        height:80px;
+        border-top-left-radius: 75%;
+        border-bottom-right-radius: 75%;
+    }
+    75%{
+        height:160px;
+        border-top-left-radius: 85%;
+        border-bottom-right-radius: 85%;
+    }
+    100%{
+        height:320px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+}

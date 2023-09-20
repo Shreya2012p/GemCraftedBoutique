@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis%3Awght%40200%3B300%3B400%3B500%3B600%3B700%3B800&display=swap');
+*,
+*:after,
+*:before{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset:0;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--primary-color) !important;
+}
+ul,
+ol{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --primary-color:#ff553e;
+    --secondary-color:#333;
+    --white-color:#fff;
+    --black-color:#000;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size:100%;
+    font-weight:400;
+    font-family:'Dosisi',sans-serif;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width:0.3125rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+
+
+h1{
+    font-size:3rem;
+    font-weight:400;
+    margin-bottom:1rem;
+    text-transform: uppercase;
+    color:var(--white-color);
+}
+h2{
+    font-size:1.5625rem;
+    font-weight:600;
+    line-height:2.5rem;
+    text-transform: capitalize;
+    color:var(--white-color);
+}
+h4{
+    font-size:1.125rem;
+    font-weight:400;
+    margin-bottom:0.937rem;
+    text-transform: capitalize;
+    color:var(--white-color);
+    transition:all .3s linear;
+}
+h5{
+    font-size:0.825rem;
+    font-weight:400;
+    margin-bottom:10rem;
+    text-transform: capitalize;
+    color:var(--white-color);
+}
+p{
+    font-size:1rem;
+    font-weight:400;
+    color:white;
+    line-height:1.75rem;
+    letter-spacing: 0.06rem;
+    opacity:0.8;
+}
+
+.main-btn:hover::before{
+    transform: rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    background-color: rgb(215, 199, 199);
+}
+.main-btn:hover::after{
+    transform: rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    background-color:rgb(117, 83, 83);
+}
+.main-btn:hover{
+    color: var(--primary-color) !important;
+}
+.wrapper{
+    padding-top:4rem;
+    padding-bottom:4rem;
+    background-color: var(--secondary-color);
+}
+.text-content{
+    width:60%;
+    margin:auto;
+}
+
+
+.top-header{
+    background-color: var(--secondary-color);
+}
+.top-header span{
+    font-size:0.875rem;
+    color:var(--white-color);
+    letter-spacing: 0.1062;
+}
+.navigation-wrap{
+    position:fixed;
+    width:100%;
+    left:0;
+    z-index:1000;
+    transform: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding:0 0.5rem;
+    transition:all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline:unset;
+    border:none;
+    box-shadow: none;
+}
+.navigation-wrap .nav-link{
+    padding-top: 0.9375rem;
+    font-size:0.875rem;
+    font-weight:400;
+    text-transform:uppercase;
+    color:var(--white-color);
+    letter-spacing: 0.062rem;
+}
+.navigation-wrap .nav-link:hover,
+.navigation-wrap .nav-link.active{
+    color:var(--primary-color);
+}
+
+.navigation-wrap.scroll-on{
+    position:fixed;
+    background:color;
+    top:0;
+    left:0;
+    width:100%;
+    box-shadow:0 0.125rem 1.75rem 1 rgb(0,0,0,0.09);
+    transition:all .15s ease-in-out 0s;
+}
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
+    color:var(--primary-color);
+}
+/* top banner design  */
+#home .carousel-caption{
+top:22rem
+}
+#home .carousel-caption p{
+    max-width:36.25rem;
+    margin:1.0625rem auto;
+    color:#fff  ;
+}
